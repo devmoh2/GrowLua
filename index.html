@@ -3,27 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moh AL Zoubi - Web is coming soon</title>
-    
-    <!-- Google Font: Orbitron (futuristic style) -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            background-color: black;
+            color: purple;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        .typed {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            border-right: 0.15em solid purple;
+            animation: typing 5s steps(40) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Content Overlay with Animated Header -->
-    <div class="content">
-        <h1 class="animated-header">Moh AL Zoubi</h1>
-        <p class="futuristic-text">Web is coming soon</p>
+    <div class="text">
+        <div class="typed">Moh Zoubi Website Is Coming Soon</div>
+        <br><br>
+        <div class="typed" style="animation-delay: 6s;">Rayan al faqeeh</div>
     </div>
-
-    <!-- Canvas for Background -->
-    <canvas id="bgCanvas"></canvas>
-
-    <!-- Link to external JavaScript file -->
-    <script src="script.js"></script>
 
 </body>
 </html>
