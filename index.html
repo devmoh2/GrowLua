@@ -1,169 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GrowLua</title>
-    <script src="script.js" defer></script>
+    <title>Text in RGB Color</title>
     <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2F2F2F; /* Darker background for the page */
-            color: #fff; /* White text color */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 3em;
-            text-align: center;
-            color: #fff; /* White text color for GrowLua */
-        }
-
-        /* Slow Animation for Header */
-        @keyframes slowRainbowHeader {
-            0% {
-                background-color: #000;
-            }
-            25% {
-                background-color: #333;
-            }
-            50% {
-                background-color: #444;
-            }
-            75% {
-                background-color: #555;
-            }
-            100% {
-                background-color: #000;
-            }
-        }
-
-        header {
-            background-color: #000; /* Initial color black */
-            color: white;
-            padding: 20px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between; /* Left and right sections */
-            align-items: center;
-            animation: slowRainbowHeader 12s linear infinite; /* Slower header color-changing animation */
-        }
-
-        footer {
-            background-color: #282c34;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .content {
-            padding: 20px;
-            text-align: center;
-            flex: 1;
-        }
-
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+        .colored-text {
+            color: rgb(50, 130, 200);  /* Adjust RGB values here */
+            font-size: 48px;
             font-weight: bold;
-            transition: all 0.3s ease-in-out;
-        }
-
-        a:hover {
-            color: #fff; /* Change text color to white */
-            background-color: #4CAF50; /* Change background on hover */
-            transform: scale(1.1); /* Slightly enlarge the link */
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Header Links Styling */
-        .header-left, .header-right {
-            display: flex;
-        }
-
-        .header-left a, .header-right a {
-            color: #fff;
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .header-left a:hover, .header-right a:hover {
-            background-color: #4CAF50;
-            color: white;
-            transform: scale(1.1); /* Slightly enlarge the link */
-        }
-
-        .header-left {
-            justify-content: flex-start;
-        }
-
-        .header-right {
-            margin-left: auto; /* Align the right items to the right */
-        }
-
-        /* Center the h1 element properly */
-        .header-center {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .box {
-                width: 80%; /* Adjust width for smaller screens */
-                left: 10%;
-            }
-
-            .box img {
-                width: 80px; /* Adjust image size for smaller screens */
-                height: 80px;
-            }
+            text-align: center;
+            margin-top: 20%;
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="header-left">
-            <a href="#">Home</a>
-            <a href="#">Download</a>
-        </div>
-        <h1 class="header-center">GrowLua</h1> <!-- Centered logo -->
-        <div class="header-right">
-            <a href="#">Login</a>
-            <a href="https://discord.gg/Gdptd8s6dC" target="_blank">Discord</a>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="content">
-            <h2>Welcome to GrowLua Website</h2>
-            <p>GrowLua is the best platform for your Lua development needs. Join us to expand your knowledge and skills!</p>
-            <p><a href="https://discord.gg/Gdptd8s6dC" target="_blank">Visit our platform</a></p>
-        </div>
+<body dir="rtl">
+    <div class="colored-text">
+        حلا معها فيب
     </div>
-
-    <footer>
-        <p>&copy; 2024 GrowLua. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
